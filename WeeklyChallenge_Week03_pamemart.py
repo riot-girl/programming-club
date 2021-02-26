@@ -68,6 +68,7 @@ def capture_expenses(items):
             amount = ValueError
             while amount == ValueError:
                 expense = input(f"\nExpense {i+1}: ").strip().split(',')
+                print(expense)
                 amount = expense[0]
                 amount = check_input(amount)
             if len(expense) != 2:
