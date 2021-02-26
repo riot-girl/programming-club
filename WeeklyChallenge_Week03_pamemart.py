@@ -61,14 +61,13 @@ def capture_expenses(items):
     totalexp = 0
     print("\n\n-------------- Capturing the Expenses --------------")
     print("\nPlease enter the amount followed by the concept of your expense, "
-    "separated by a comma.\ne.g. 400, Hyrule Warriors expansion")
+    "separated by a comma.\ne.g. 400,Hyrule Warriors expansion")
     for i in range(items):
         expense = []
         while len(expense) !=2:
             amount = ValueError
             while amount == ValueError:
                 expense = input(f"\nExpense {i+1}: ").strip().split(',')
-                print(expense)
                 amount = expense[0]
                 amount = check_input(amount)
             if len(expense) != 2:
