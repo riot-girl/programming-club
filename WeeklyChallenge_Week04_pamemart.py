@@ -18,8 +18,6 @@ __maintainer__ = "Pam Martínez"
 __status__ = "Development"
 __version__ = "0.0.1"
 
-from typing import List
-
 
 def check_input(input):
     try:
