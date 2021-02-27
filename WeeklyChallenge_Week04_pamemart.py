@@ -114,15 +114,19 @@ def setset():
     str_countries = ",".join(map(str,countries))
     print(f"Both have been to: {str_countries}.")
     return countries1, countries2
-def main():
-    mylist = tasks()
-    mytuple = store_tuple()
-    myset1, myset2 = setset()
-    
+
+def passengers():
     print("\nThis is the system's information:")
     passengers = {'G123456':{'Seat':'12A', 'Flight': 123},
              'G989494':{'Seat':'27D', 'Flight': 1009}}
     print(passengers)
+    return passengers
+
+def main():
+    mylist = tasks()
+    mytuple = store_tuple()
+    myset1, myset2 = setset()
+    mydict = passengers()
 
 if __name__ == "__main__":
     main()
